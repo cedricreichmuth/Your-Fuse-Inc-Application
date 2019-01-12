@@ -5,6 +5,7 @@
   "dependencies": {
     "@material/card": "^0.43.0",
     "@material/react-card": "^0.8.0",
+    "@material/typography": "^0.43.0",
     "axios": "^0.18.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

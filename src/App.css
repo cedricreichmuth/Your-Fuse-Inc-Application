@@ -14,6 +14,9 @@
 .mdc-card{
   width: 30%;
 }
+.card-header{
+  height: 190px;
+}
 h1{
   text-align: center;
   font-size: 30px;

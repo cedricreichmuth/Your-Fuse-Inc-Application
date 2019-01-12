@@ -5,27 +5,18 @@ import cadImg from './cad.svg'
 import chfImg from './chf.svg'
 import eurImg from './eur.svg'
 import refreshBtn from './refresh.svg'
-import '@material/react-card/dist/card.css';
-import Card, {
-  CardPrimaryContent,
-  CardMedia,
-  CardActions,
-  CardActionButtons,
-  CardActionIcons
-} from "@material/react-card";
+import '@material/react-card/dist/card.css'
 
 
 const CardSection = props =>{
   return(
     props.currentState.map((element, i)=>{
       return(
-        <Card>
-          <CardPrimaryContent>
-            <h1>{element.name}</h1>
-            <img src={element.image}/>
-            <p>1 {element.name} = {element.rate} USD</p>
-          </CardPrimaryContent>
-        </Card>
+        <div className="mdc-card mdc-card--outlined">
+          <div className="mdc-card__media card-header" style={{backgroundImage: `url(${element.image})`}}></div>
+          <h1>{element.name}</h1>
+          <p>1 {element.name} = {element.rate} USD</p>
+        </div>
       )
     })
   )
